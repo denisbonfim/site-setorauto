@@ -9,18 +9,55 @@
             margin: 0;
             background-color: rgb(0, 70, 165); /* Fundo azul */
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh; /* Ocupa a altura total da tela */
+            color: white; /* Texto branco para contraste */
+            font-family: Arial, sans-serif;
         }
+
         .logo {
-            width: 250px; /* Tamanho ajustável do logotipo */
+            width: 200px; /* Tamanho ajustável do logotipo */
+            max-width: 90%; /* Garante responsividade */
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #00a2ff; /* Amarelo ouro ao passar o mouse */
+        }
+
+        .social-links i {
+            font-size: 24px; /* Tamanho dos ícones */
         }
     </style>
     <!--favicon-->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Font Awesome para os ícones -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <img src="logo.png" alt="Logotipo" class="logo">
+    <div class="social-links">
+        <a href="https://x.com/setorautobr" target="_blank" aria-label="X">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/setorautobr/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
 </body>
 </html>
